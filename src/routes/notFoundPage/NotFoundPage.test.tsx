@@ -12,6 +12,7 @@ describe("NotFoundPage component", () => {
     );
 
     // Assert
+
     // Title
     expect(screen.getByText("Page 404 !")).toBeInTheDocument();
     // 404 message
