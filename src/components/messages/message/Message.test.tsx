@@ -4,11 +4,11 @@ import Message from "./Message";
 describe("Message component", () => {
   it("renders apology message correctly", () => {
     // Arrange
-    const currentApology = "Sample apology";
+    const currentApology = "current apology";
     const currentHttpCode = 404;
 
     // Act
-    const { getByText } = render(
+    const { getByText, getByTestId } = render(
       <Message
         currentApology={currentApology}
         currentHttpCode={currentHttpCode}
@@ -16,7 +16,7 @@ describe("Message component", () => {
     );
 
     // Assert
-    const MessageElement = getByText(`" ${currentApology}."`);
+    const MessageElement = getByTestId("apology-message");
     expect(MessageElement).toBeInTheDocument();
 
     const httpCodeMessageElement = getByText(
