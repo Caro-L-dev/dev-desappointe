@@ -2,17 +2,17 @@ import { useApology } from "@/hooks/useApology";
 import Button from "../common/button/Button";
 import { Title } from "../common/title/Title";
 import Wrapper from "../common/wrapper/Wrapper";
-import Message from "../message/Message";
-import Loader from "../common/loader/Loader";
+import MessageWithLoader from "../messages/messageWithLoader/MessageWithLoader";
 
 export const Start = () => {
-  const { currentApology, currentHttpCode, generateNewApology } = useApology();
+  const { currentApology, currentHttpCode, isLoading, generateNewApology } =
+    useApology();
 
   return (
     <Wrapper>
       <Title children="Excuses de Dev !" />
-      <Loader />
-      <Message
+      <MessageWithLoader
+        isLoading={isLoading}
         currentApology={currentApology}
         currentHttpCode={currentHttpCode}
       />
