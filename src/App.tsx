@@ -1,5 +1,11 @@
+import { Start } from "./components/start/Start";
+
 export const App = () => {
-  return <div className="underline">App</div>;
+  return (
+    <div>
+      <Start />
+    </div>
+  );
 };
 
 export default App;
