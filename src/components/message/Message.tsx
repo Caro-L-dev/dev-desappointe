@@ -9,9 +9,13 @@ const Message: React.FC<MessageProps> = ({
 }) => {
   return (
     <div className="p-6">
-      <blockquote className="text-xl italic mb-6">
-        " {currentApology}."
-      </blockquote>
+      {currentApology ? (
+        <blockquote className="text-xl italic mb-6">
+          "{currentApology}"
+        </blockquote>
+      ) : (
+        <p>Prêt à découvrir des excuses spéciales dev ?</p>
+      )}
       {currentHttpCode && (
         <p className="text-sm">
           Code Http correspondant au message "{currentApology}" :{" "}
