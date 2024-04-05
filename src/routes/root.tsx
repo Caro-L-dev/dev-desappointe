@@ -12,9 +12,6 @@ export default function Root() {
           <Link to={`/lost`}>Je suis perdu</Link>
         </li>
         <li className="mx-4">
-          <Link to={`/$http_code`}>Http code</Link>
-        </li>
-        <li className="mx-4">
           <Link to={`*`}>404</Link>
         </li>
       </ul>

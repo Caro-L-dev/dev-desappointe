@@ -17,6 +17,10 @@ export const Start = () => {
         currentHttpCode={currentHttpCode}
       />
       <Button onClick={generateNewApology}>Générer une nouvelle excuse</Button>
+      <div className="mt-6 text-xs pretty">
+        <p>Seconde option :</p>
+        <p>Entrez un code http compris entre 701 et 799 dans la barre URL.</p>
+      </div>
     </Wrapper>
   );
 };

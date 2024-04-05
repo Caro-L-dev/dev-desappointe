@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
+import { Start } from "./components/start/Start.tsx";
 import NotFoundPage from "./notFoundPage/NotFoundPage.tsx";
 import { LostPage } from "./routes/lost.tsx";
+import { HttpPage } from "./routes/httpCode.tsx";
 
 import "./index.css";
-import { Start } from "./components/start/Start.tsx";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
         element: <LostPage />,
       },
       {
-        path: "/$http_code",
-        element: <NotFoundPage />,
+        path: "/:code",
+        element: <HttpPage />,
       },
       {
         path: "*",
