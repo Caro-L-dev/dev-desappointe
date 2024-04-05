@@ -4,9 +4,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import { Start } from "./components/start/Start.tsx";
-import NotFoundPage from "./notFoundPage/NotFoundPage.tsx";
-import { LostPage } from "./routes/lost.tsx";
-import { HttpPage } from "./routes/httpCode.tsx";
+import NotFoundPage from "./routes/notFoundPage/NotFoundPage.tsx";
+import { LostPage } from "./routes/lostPage/LostPage.tsx";
+import { HttpPage } from "./routes/httpPage/HttpPage.tsx";
 
 import "./index.css";
 

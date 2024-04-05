@@ -4,7 +4,7 @@ import Wrapper from "@/components/common/wrapper/Wrapper";
 import { Title } from "@/components/common/title/Title";
 import { apologies } from "@/data/apologies";
 
-import NotFoundPage from "@/notFoundPage/NotFoundPage";
+import NotFoundPage from "@/routes/notFoundPage/NotFoundPage";
 
 interface Params {
   code: string;
