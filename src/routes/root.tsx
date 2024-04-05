@@ -1,20 +1,26 @@
+import { Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+
 export default function Root() {
   return (
     <nav className="my-6">
       <ul className="flex justify-center underline cursor-pointer">
         <li className="mx-4">
-          <a href={`/`}>Acceuil</a>
+          <Link to={`/`}>Acceuil</Link>
         </li>
         <li className="mx-4">
-          <a href={`/lost`}>Je suis perdu</a>
+          <Link to={`/lost`}>Je suis perdu</Link>
         </li>
         <li className="mx-4">
-          <a href={`/$http_code`}>Http code</a>
+          <Link to={`/$http_code`}>Http code</Link>
         </li>
         <li className="mx-4">
-          <a href={`*`}>404</a>
+          <Link to={`*`}>404</Link>
         </li>
       </ul>
+      <div id="detail">
+        <Outlet />
+      </div>
     </nav>
   );
 }
