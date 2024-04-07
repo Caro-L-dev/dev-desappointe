@@ -24,7 +24,7 @@ To get started with the project, follow these steps in your terminal:
    `git clone https://github.com/Caro-L-dev/dev-desappointe.git`
 
 2. **Navigate to the Project Directory**  
-   `cd dev-désappointé`
+   `cd dev-desappointe`
 
 3. **Install Dependencies**  
    `npm install`
