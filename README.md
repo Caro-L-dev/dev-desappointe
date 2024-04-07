@@ -48,6 +48,7 @@ The project is structured as follows:
 - `vite.config.js`: Vite configuration file.
 - `jest.config.js`: Jest configuration file.
 - `tailwind.config.js`: Tailwind configuration file.
+- `vercel.json`: Manage dynamic routes.
 - `package.json`: Project metadata and dependencies.
 
 ## Development Workflow 🛠️
