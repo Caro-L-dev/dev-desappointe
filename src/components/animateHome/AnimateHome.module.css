@@ -1,5 +1,6 @@
 .titleVisible {
   opacity: 1;
+  z-index: 20;
 }
 
 .titleHidden {
@@ -16,7 +17,7 @@
 
 .titleTop {
   transform: translateY(-600px);
-  transition: opacity 500ms, transform 1000ms;
+  transition: opacity 500ms, transform 2300ms;
 }
 
 .titleCenter {
@@ -24,12 +25,7 @@
   transition: opacity 500ms, transform 1000ms;
 }
 
-.startTop {
-  transform: translateY(-450px);
-  transition: opacity 500ms, transform 1200ms;
-}
-
 .startCenter {
-  transform: translateY(0);
-  transition: opacity 500ms, transform 1400ms;
+  transform: translateY(-450px);
+  transition: opacity 1000ms;
 }

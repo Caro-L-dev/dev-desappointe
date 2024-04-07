@@ -1,4 +1,3 @@
-// AnimateHome.tsx
 import { useAnimateHome } from "@/hooks/useAnimateHome";
 
 import { Start } from "../start/Start";
@@ -6,8 +5,7 @@ import { Start } from "../start/Start";
 import styles from "./AnimateHome.module.css";
 
 export const AnimateHome = () => {
-  const { isTitleVisible, isStartVisible, titlePosition, startPosition } =
-    useAnimateHome();
+  const { isTitleVisible, isStartVisible, titlePosition } = useAnimateHome();
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -22,9 +20,10 @@ export const AnimateHome = () => {
 
       <div
         data-testid="start-component"
-        className={`${
+        className={` ${
           isStartVisible ? styles.startVisible : styles.startHidden
-        } ${startPosition === "top" ? styles.startTop : styles.startCenter}`}
+        }
+        ${styles.startCenter}`}
       >
         {isStartVisible && <Start />}
       </div>

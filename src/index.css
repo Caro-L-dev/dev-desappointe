@@ -6,6 +6,7 @@ body {
   background-color: aliceblue;
   letter-spacing: 0.1em;
   font-family: var(--default-font);
+  overflow: hidden;
 }
 
 /* custom-fonts.css */
