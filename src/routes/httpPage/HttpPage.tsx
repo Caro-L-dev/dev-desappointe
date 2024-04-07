@@ -29,7 +29,12 @@ export const HttpPage: React.FC = () => {
       {apologyErrorCode ? (
         <Wrapper>
           <Title children={`Http code: ${errorCode}`} />
-          <p className="text-3xl my-6">"{apologyErrorCode.message}"</p>
+          <p
+            style={{ fontFamily: "var(--message-font)" }}
+            className="text-3xl my-6"
+          >
+            "{apologyErrorCode.message}"
+          </p>
           <p className="my-3 text-xs">
             Veuillez rentrer un code http compris entre 701 et 799 dans la barre
             URL.

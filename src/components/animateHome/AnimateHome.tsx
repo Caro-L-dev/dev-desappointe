@@ -2,7 +2,6 @@
 import { useAnimateHome } from "@/hooks/useAnimateHome";
 
 import { Start } from "../start/Start";
-import { Title } from "../common/title/Title";
 
 import styles from "./AnimateHome.module.css";
 
@@ -12,13 +11,14 @@ export const AnimateHome = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <span
-        className={`mt-[25rem] ${
+      <h1
+        style={{ fontFamily: "var(--hometitle-font)" }}
+        className={`text-5xl font-black mt-[25rem] ${
           isTitleVisible ? styles.titleVisible : styles.titleHidden
         } ${titlePosition === "top" ? styles.titleTop : styles.titleCenter}`}
       >
-        <Title children="Dev désappointé" />
-      </span>
+        Dev désappointé 💻☠️
+      </h1>
 
       <div
         data-testid="start-component"

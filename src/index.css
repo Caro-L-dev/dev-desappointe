@@ -5,4 +5,14 @@
 body {
   background-color: aliceblue;
   letter-spacing: 0.1em;
+  font-family: var(--default-font);
+}
+
+/* custom-fonts.css */
+
+:root {
+  --default-font: "Ubuntu Mono", sans-serif;
+  --hometitle-font: "Silkscreen", sans-serif;
+  --title-font: "Anton", sans-serif;
+  --message-font: "Gloria Hallelujah", cursive;
 }
