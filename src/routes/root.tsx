@@ -3,8 +3,8 @@ import { Outlet } from "react-router-dom";
 
 export default function Root() {
   return (
-    <nav className="my-6">
-      <ul className="flex justify-center underline cursor-pointer">
+    <nav>
+      <ul className="flex justify-center items-center underline cursor-pointer mt-3">
         <li className="mx-4">
           <Link to={`/`}>Acceuil</Link>
         </li>
