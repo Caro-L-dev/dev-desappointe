@@ -1,0 +1,36 @@
+/* AnimateHome.module.css */
+.titleVisible {
+  opacity: 1;
+}
+
+.titleHidden {
+  opacity: 0;
+}
+
+.startVisible {
+  opacity: 1;
+}
+
+.startHidden {
+  opacity: 0;
+}
+
+.titleTop {
+  transform: translateY(-600px);
+  transition: opacity 500ms, transform 1000ms;
+}
+
+.titleCenter {
+  transform: translateY(0);
+  transition: opacity 500ms, transform 1000ms;
+}
+
+.startTop {
+  transform: translateY(-450px);
+  transition: opacity 500ms, transform 1200ms;
+}
+
+.startCenter {
+  transform: translateY(0);
+  transition: opacity 500ms, transform 1400ms;
+}

@@ -3,8 +3,10 @@ import { Title } from "@/components/common/title/Title";
 import Wrapper from "@/components/common/wrapper/Wrapper";
 
 export const LostPage = () => {
+  const REDIRECT_TO_WELCOME_PAGE = "/";
+
   const handleCountdownEnd = () => {
-    window.location.href = "/";
+    window.location.href = REDIRECT_TO_WELCOME_PAGE;
   };
 
   return (

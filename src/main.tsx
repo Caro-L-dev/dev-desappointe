@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
-import { Start } from "./components/start/Start.tsx";
 import NotFoundPage from "./routes/notFoundPage/NotFoundPage.tsx";
 import { LostPage } from "./routes/lostPage/LostPage.tsx";
 import { HttpPage } from "./routes/httpPage/HttpPage.tsx";
 
 import "./index.css";
+
+import Root from "./routes/root.tsx";
+import { AnimateHome } from "./components/animateHome/AnimateHome.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Start />,
+        element: <AnimateHome />,
       },
       {
         path: "/lost",

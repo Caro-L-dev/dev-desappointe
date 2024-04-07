@@ -11,10 +11,13 @@ const Countdown: React.FC<CountdownProps> = ({
 }) => {
   const [countdown, setCountdown] = useState<number>(initialValue);
 
+  const COUNTDOWN_UPDATE_ONCE_PER_SECOND = 1000;
+  const DECREMENT = 1;
+
   useEffect(() => {
     const countdownInterval = setInterval(() => {
-      setCountdown((prevCountdown) => prevCountdown - 1);
-    }, 1000);
+      setCountdown((prevCountdown) => prevCountdown - DECREMENT);
+    }, COUNTDOWN_UPDATE_ONCE_PER_SECOND);
 
     return () => {
       clearInterval(countdownInterval);
